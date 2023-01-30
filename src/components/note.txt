@@ -1,0 +1,89 @@
+api call in js
+--------------
+
+AJAX
+ 
+ -XMLhttp
+ -fetch
+ -asynch await
+
+ redirection In react
+ --------------------
+
+ react-router-dom
+         - npm i react-router-dom
+
+
+import {
+    BrowserRouter as Router - all routing need components
+    Routes                  - to set paths for each components
+    Route                   - morethan one path
+}
+
+useParams - hook used to access params from component url
+
+
+ REDUX
+-------
+
+coupling - many connection between parents nd child component
+
+props drilling - in coupling if any intermediate component have any errors all 
+                 other child will not work
+
+
+- To avoid props drilling we need to reduce coupling and make all the components
+  independent
+
+- for this react introduced a new technology -state management technology called REDUX
+
+
+Redux process
+-------------
+
+- create a new js file to keep the state, all the components can access the js file
+
+
+- components can access tha datas from the js file
+  but they can't update datas in the js file
+
+
+
+
+
+
+
+
+
+
+
+
+libraries to apply Redux
+------------------------
+
+1. REDUX
+2. REACT REDUX
+3. REACT-THUNK
+
+      npm i redux react-redux-thunk
+
+
+createStore() - method in REDUX used to create store in js file
+              - 2 arguments
+                  1. reducer
+                  2. middleware (used to make synchronous redux into asynchronous)
+
+
+applyMiddleware() - method in REDUX to apply middleware
+
+combineReducers() - method in REDUX used to combine all the reducers in js file
+
+
+thunk - method in REDUX-THUNK used to create middleware
+
+(...) - spread operator
+
+
+1. create store
+2. apply the store in index.js      
+- provide : is a tag used to pass  the store 
